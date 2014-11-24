@@ -1,0 +1,20 @@
+#picrow {
+  @include pad(25px);
+  background-image: url(/images/pattern.png);
+  background-repeat: repeat;
+  height: 40em;
+  width: 100%;
+  color: #fff;
+}
+
+.ptextdiv {
+  @include span-columns(6);
+}
+
+.pullquote {
+  @include span-columns(6);
+}
+
+.pullquote h1 {
+  font-weight: 300;
+}

@@ -1,0 +1,12 @@
+.hero {
+  @include pad(25px);
+  background-image: url(/images/heroimg1.jpg);
+  background-size: cover;
+  height: 50em;
+  width: 100%;
+  color: #fff;
+}
+
+#headline {
+  @include pad(15em 0 0 0);
+}

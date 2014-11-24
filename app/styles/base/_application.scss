@@ -1,0 +1,89 @@
+/* Application Template
+ * -----------------------------------------------------------------------------
+ * Styling for the structure of the site. If your element doesn't show up on
+ * every page, it probably shouldn't be in this file.
+ * -----------------------------------------------------------------------------*/
+
+/* Things to place in separate files...
+ * ---------------------------------------------------------------------------
+ * /extends/            => Sass extends declarations
+ * /mixins/             => Sass mixins declarations
+ * _buttons.scss
+ * _fonts.scss          => Font imports
+ * _forms.scss
+ * _lists.scss
+ * _library.scss        => Custom classes used throughout the app.
+ * _tables.scss
+ * _typography.scss
+ * _utilities.scss
+ * _variables.scss
+ * _component_name.scss => Styles for a component of functionality (e.g. – modal).
+ * _page_name.scss      => Styles for page specific elements.
+ * ---------------------------------------------------------------------------
+ */
+
+.header-primary {
+/*  background-color: #666;*/
+  height: 5em;
+  position: fixed;
+  width: 100%;
+  opacity:0.3;
+}
+
+.bg {
+  background: #525454;
+/*  width: 100%;
+  height: 100px;*/
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+}
+
+.transition {    
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.container {
+  @include outer-container;
+ /* margin: 0 auto;*/
+  padding: 20px 0px 90px 0px;
+}
+
+.grayrow {
+  background-color: #ccc;
+}
+
+section {
+  @include outer-container;
+  aside { @include span-columns(4); }
+  article { @include span-columns(8); }
+}
+
+section {
+  @include pad(10em);
+}
+
+aside {
+  font-weight: 300;
+  font-size: 1.75em;
+  line-height: 1.1em;
+}
+
+section {
+  @include media(max-width 769px);
+  @include pad(2em);
+}
+
+.nav-primary {}
+
+.content-primary {}
+
+.footer-primary {
+  background-color: #525454;
+  height: 10em;
+}

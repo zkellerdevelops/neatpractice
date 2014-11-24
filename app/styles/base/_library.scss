@@ -1,0 +1,45 @@
+.module {
+  @include span-columns(4 of 12);
+  @include pad(25px);
+/*  border: 1px solid #666;
+  background-color: #999;*/
+  /*color: #999;*/
+}
+
+.module h2 {
+  color: #8BCEE8;
+}
+
+.module i {
+  color: #8BCEE8;
+}
+
+  .module {
+     @include media(max-width 769px) {
+       @include span-columns(12);
+     }
+  }
+
+
+.nav {
+  margin-top: 10px;
+}
+
+.nav li {
+  display: inline;
+  padding: 0 1em 0 0;
+  color: #fff;
+}
+
+.nav li:hover {
+  color: #999;
+  cursor: pointer;
+}
+
+.callout {
+  @include pad(3em);
+}
+
+.callout h1 {
+  font-weight: 300;
+}
