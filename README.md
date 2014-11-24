@@ -1,7 +1,6 @@
-<<<<<<< HEAD
 # neatpractice
 
-[Describe the project.]
+Exercise in learning Playbook/Bourbon/Neat for Centresource.
 
 ## Project Setup
 This project utilizes Playbook, reference Playbook's [setup guide](https://github.com/centresource/generator-playbook#get-started).
@@ -28,9 +27,3 @@ Build the concatenated, minified production version of the source into the `dist
 
 ##### grunt deploy
 Deploy the production version of the source to [GitHub Pages](http://pages.github.com/) via [grunt-build-control](https://github.com/robwierzbowski/grunt-build-control).
-=======
-neatp
-=====
-
-Exercise in learning Playbook/Bourbon/Neat for Centresource.
->>>>>>> a0ae0ec6992bac160a0299ad8ec4b9900b86ef14
